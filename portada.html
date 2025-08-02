@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Baúl de Enigmas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+      animation: entradaDesdeAbajo 1.2s ease-out;
+    }
+
+    h1 {
+      font-family: 'Nosifer', cursive;
+      color: #ff8000;
+      font-size: 50px;
+      animation: parpadeo 1.5s infinite alternate;
+
+    }
+
+    .flecha {
+      margin-top: 40px;
+      font-size: 30px;
+      color: #ff8000;
+      animation: subirBajar 1.5s infinite;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    @keyframes parpadeo {
+      from {
+        text-shadow: 0 0 5px #ff8000, 0 0 10px #363636;
+      }
+      to {
+        text-shadow: 0 0 15px #ff8000, 0 0 30px #1b1b1a;
+      }
+    }
+
+    @keyframes subirBajar {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Baúl de Enigmas</h1>
+  
+  <a class="flecha" href="index.html">&#x25BC;</a>
+</body>
+</html>
